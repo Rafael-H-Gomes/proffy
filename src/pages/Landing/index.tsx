@@ -1,5 +1,5 @@
 import React from 'react';
-// "link" para fazer o spa funcionar
+// "link" serve para fazer o spa funcionar
 import { Link } from 'react-router-dom';
 
 import logoImg from '../../assets/images/logo.svg';
@@ -20,11 +20,13 @@ function Landing() {
                   <h2>Sua plataforma de estudos online.</h2>
               </div>
 
-              <img
-                src={landingImg}
-                alt="Plataforma de estudos"
-                className="hero-image"
-              />
+              <div className="hero-block">
+                <img
+                    src={landingImg}
+                    alt="Plataforma de estudos"
+                    className="hero-image"
+                />
+              </div>
 
               <div className="buttons-container">
                   <Link to="/study" className="study">
