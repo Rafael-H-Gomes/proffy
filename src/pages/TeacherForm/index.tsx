@@ -87,12 +87,14 @@ function TeacherForm() {
                         <Input 
                             name="avatar" 
                             label="Avatar"
+                            example="(Ex: https://avatar.site.com/123a456bc)"
                             value={avatar} 
                             onChange={(e) => { setAvatar(e.target.value) }}
                         />
                         <Input 
                             name="whatsapp" 
                             label="Whatsapp"
+                            example="(Ex: 551799123-4567, !55 obrigatório!)"
                             value={whatsapp} 
                             onChange={(e) => { setWhatsapp(e.target.value) }}
                         />
@@ -129,6 +131,7 @@ function TeacherForm() {
                         <Input 
                             name="cost" 
                             label="Custo por aula"
+                            example=".  . .    .   .  . .    .   .  . .   .  .(Em R$)"
                             value={cost}
                             onChange={(e) => { setCost(e.target.value) }}
                         />
